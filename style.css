@@ -1,4 +1,7 @@
-*{
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
     transition: all .3s ease-in;
     box-sizing:content-box;
     margin: 0;
@@ -7,10 +10,14 @@
 html{
     height:100%;
 }
-html, body{
+html,body{
+    min-height:100%;
+    
+}
+body{
     border:10px solid #fff;
     background-color: #3B3F45;
-    font:400 18px/1 'Trebuchet', sans-serif;
+    font:400 18px/1 'Trebuchet MS', Trebuchet, Arial, sans-serif;
     color:#EB7E7F;
     margin: 0 auto;
     min-height: 100%;
@@ -34,7 +41,7 @@ header h4{
 }
 .ba-container{
     margin: 30px auto;
-    padding: 0;
+    padding: 0 20px;
     max-width:800px;
 }
 .ba-space-list{
@@ -52,10 +59,9 @@ header h4{
 }
 .ba-space-list label{
     display:block;
-    
+    padding: 15px;
 }
 .ba-space-list li{
-    padding: 15px;
     background-color: #7a7593;
 }
 .ba-space-list li:hover{
